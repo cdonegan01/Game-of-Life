@@ -12,17 +12,18 @@ public class Game {
 	public static void main(String[] args) { 
         int gridWidth = 8, gridLength = 8; 
         
+        // Creating a new Grid
         int[][] firstGrid = { { 0, 0, 0, 0, 0, 0, 0, 0}, 
             { 0, 0, 0, 0, 0, 0, 0, 0}, 
-            { 0, 0, 0, 1, 0, 0, 0, 0}, 
-            { 0, 0, 0, 1, 0, 0, 0, 0}, 
-            { 0, 0, 0, 1, 0, 0, 0, 0}, 
             { 0, 0, 0, 0, 0, 0, 0, 0}, 
+            { 0, 0, 1, 0, 0, 0, 0, 0}, 
+            { 0, 0, 0, 1, 0, 0, 0, 0}, 
+            { 0, 0, 0, 0, 1, 0, 0, 0}, 
             { 0, 0, 0, 0, 0, 0, 0, 0}, 
             { 0, 0, 0, 0, 0, 0, 0, 0}
         }; 
   
-        // Displaying the grid 
+        // Printing First Grid
         System.out.println("Grid One"); 
         for (int outerCount = 0; outerCount < gridWidth; outerCount++) { 
             for (int innerCount = 0; innerCount < gridLength; innerCount++) 
@@ -85,6 +86,7 @@ public class Game {
         } 
   
         System.out.println("Grid Two"); 
+        //printing resulting grid
         for (int gridPrintOuter = 0; gridPrintOuter < gridWidth; gridPrintOuter++) 
         { 
             for (int gridPrintInner = 0; gridPrintInner < gridLength; gridPrintInner++) 
